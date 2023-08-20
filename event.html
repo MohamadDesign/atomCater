@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>کترینگ اتم | همایش</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet  -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link rel="stylesheet" href="lib/lightbox/css/lightbox.min.css" />
+    <link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css" />
+
+    <!-- Customized Bootstrap Stylesheet  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Template Stylesheet  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar start -->
+    <div class="container-fluid nav-bar">
+      <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-4">
+          <a href="index.html" class="navbar-brand">
+            <h1 class="text-primary fw-bold mb-0">
+              <span class="text-dark">کترینگ </span>اتم
+            </h1>
+          </a>
+          <button
+            class="navbar-toggler py-2 px-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars text-primary"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto">
+              <a href="index.html" class="nav-item nav-link active">خانه</a>
+              <a href="about.html" class="nav-item nav-link">درباره ما</a>
+              <a href="service.html" class="nav-item nav-link">خدمات </a>
+              <a href="event.html" class="nav-item nav-link">همایش ها</a>
+              <a href="menu.html" class="nav-item nav-link">منو</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >صفحات</a
+                >
+                <div class="dropdown-menu bg-light">
+                  <a href="book.html" class="dropdown-item">رزرو</a>
+                  <a href="blog.html" class="dropdown-item">وبلاگ ما</a>
+                  <a href="team.html" class="dropdown-item">کارکنان</a>
+                  <a href="testimonial.html" class="dropdown-item"
+                    >رضایت مشتریان</a
+                  >
+                  <a href="404.html" class="dropdown-item">صفحه 404</a>
+                </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">ارتباط با ما</a>
+            </div>
+            <a
+              href=""
+              class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill"
+              >سفارش دهید</a
+            >
+
+            <button
+              class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex"
+              data-bs-toggle="modal"
+              data-bs-target="#searchModal"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Modal Search Start -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              جست و جو بر اساس کلمات کلیدی
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <div class="input-group w-75 mx-auto d-flex">
+              <input
+                type="search"
+                class="form-control bg-transparent p-3"
+                placeholder="کلمات کلیدی را جست و جو کنید"
+                aria-describedby="search-icon-1"
+              />
+              <span id="search-icon-1" class="input-group-text p-3"
+                ><i class="fa fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-light py-6 my-6 mt-0">
+      <div class="container text-center animated bounceInDown">
+        <h1 class="display-1 mb-4">همایش ها</h1>
+        <ol
+          class="breadcrumb justify-content-center mb-0 animated bounceInDown"
+        >
+          <li class="breadcrumb-item"></li>
+          <li class="breadcrumb-item"><a href="index.html">خانه </a></li>
+          <li class="text-dark">همایش ها</li>
+        </ol>
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Events Start -->
+    <div class="container-fluid event py-6">
+      <div class="container">
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+          <small
+            class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3"
+            >آخرین همایش ها</small
+          >
+          <h1 class="display-5 mb-5">
+            برخی از مراسمات و رویداد های حرفه ایی ما
+          </h1>
+        </div>
+        <div class="tab-class text-center">
+          <ul
+            class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp"
+            data-wow-delay="0.1s"
+          >
+            <li class="nav-item p-2">
+              <a
+                class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active"
+                data-bs-toggle="pill"
+                href="#tab-1"
+              >
+                <span class="text-dark" style="width: 150px">تمام مراسمات</span>
+              </a>
+            </li>
+            <li class="nav-item p-2">
+              <a
+                class="d-flex py-2 mx-2 border border-primary bg-light rounded-pill"
+                data-bs-toggle="pill"
+                href="#tab-2"
+              >
+                <span class="text-dark" style="width: 150px">عروسی</span>
+              </a>
+            </li>
+            <li class="nav-item p-2">
+              <a
+                class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill"
+                data-bs-toggle="pill"
+                href="#tab-3"
+              >
+                <span class="text-dark" style="width: 150px">شرکتی</span>
+              </a>
+            </li>
+            <li class="nav-item p-2">
+              <a
+                class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill"
+                data-bs-toggle="pill"
+                href="#tab-4"
+              >
+                <span class="text-dark" style="width: 150px">دوستانه</span>
+              </a>
+            </li>
+            <li class="nav-item p-2">
+              <a
+                class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill"
+                data-bs-toggle="pill"
+                href="#tab-5"
+              >
+                <span class="text-dark" style="width: 150px">رستوران</span>
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <div class="row g-4">
+                    <div
+                      class="col-md-6 col-lg-3 wow bounceInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-1.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">عروسی</h4>
+                          <a
+                            href="img/event-1.jpg"
+                            data-lightbox="event-1"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3 wow bounceInUp"
+                      data-wow-delay="0.3s"
+                    >
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-2.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">شرکتی</h4>
+                          <a
+                            href="img/event-2.jpg"
+                            data-lightbox="event-2"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3 wow bounceInUp"
+                      data-wow-delay="0.5s"
+                    >
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-3.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">عروسی</h4>
+                          <a
+                            href="img/event-3.jpg"
+                            data-lightbox="event-3"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3 wow bounceInUp"
+                      data-wow-delay="0.7s"
+                    >
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-4.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">رستوران</h4>
+                          <a
+                            href="img/event-4.jpg"
+                            data-lightbox="event-4"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3 wow bounceInUp"
+                      data-wow-delay="0.1s"
+                    >
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-5.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">دوستانه</h4>
+                          <a
+                            href="img/event-5.jpg"
+                            data-lightbox="event-5"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3 wow bounceInUp"
+                      data-wow-delay="0.3s"
+                    >
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-6.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">عروسی</h4>
+                          <a
+                            href="img/event-6.jpg"
+                            data-lightbox="event-6"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3 wow bounceInUp"
+                      data-wow-delay="0.5s"
+                    >
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-7.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">رستوران</h4>
+                          <a
+                            href="img/event-7.jpg"
+                            data-lightbox="event-7"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 col-lg-3 wow bounceInUp"
+                      data-wow-delay="0.7s"
+                    >
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-8.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">شرکتی</h4>
+                          <a
+                            href="img/event-8.jpg"
+                            data-lightbox="event-17"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-2" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-1.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">عروسی</h4>
+                          <a
+                            href="img/01.jpg"
+                            data-lightbox="event-8"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-2.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">عروسی</h4>
+                          <a
+                            href="img/01.jpg"
+                            data-lightbox="event-9"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-3" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-3.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">شرکتی</h4>
+                          <a
+                            href="img/01.jpg"
+                            data-lightbox="event-10"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-4.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">شرکتی</h4>
+                          <a
+                            href="img/01.jpg"
+                            data-lightbox="event-11"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-4" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-5.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">دوستانه</h4>
+                          <a
+                            href="img/01.jpg"
+                            data-lightbox="event-12"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-6.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">دوستانه</h4>
+                          <a
+                            href="img/01.jpg"
+                            data-lightbox="event-13"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab-5" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-7.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">رستوران</h4>
+                          <a
+                            href="img/01.jpg"
+                            data-lightbox="event-14"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="event-img position-relative">
+                        <img
+                          class="img-fluid rounded w-100"
+                          src="img/event-8.jpg"
+                          alt=""
+                        />
+                        <div class="event-overlay d-flex flex-column p-4">
+                          <h4 class="me-auto">رستوران</h4>
+                          <a
+                            href="img/01.jpg"
+                            data-lightbox="event-15"
+                            class="my-auto"
+                            ><i class="fas fa-search-plus text-dark fa-2x"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Events End -->
+
+    <!-- Book Us Start -->
+   <div
+      class="container-fluid contact py-6 wow bounceInUp"
+      data-wow-delay="0.1s"
+    >
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-1">
+            <img
+              src="img/background-site.jpg"
+              class="img-fluid h-100 w-100 rounded-start"
+              style="object-fit: cover; opacity: 0.7"
+              alt=""
+            />
+          </div>
+          <div class="col-10">
+            <div
+              class="border-bottom border-top border-primary bg-light py-5 px-4"
+            >
+              <div class="text-center">
+                <small
+                  class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3"
+                  >رزرو کنید</small
+                >
+                <h1 class="display-5 mb-5">اطلاعات خود را وارد کنید</h1>
+              </div>
+              <div class="row g-4 form">
+                <div class="col-lg-4 col-md-6">
+                  <select
+                    class="form-select border-primary p-2"
+                    aria-label="Default select example"
+                  >
+                    <option selected>کشور خود را انتخاب کنید</option>
+                    <option value="1">آمریکا</option>
+                    <option value="2">انگلستان</option>
+                    <option value="3">ایران</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <select
+                    class="form-select border-primary p-2"
+                    aria-label="Default select example"
+                  >
+                    <option selected>شهر خود را انتخاب کنید</option>
+                    <option value="1">بستگی به کشور دارد</option>
+                    <option value="2">لندن</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <select
+                    class="form-select border-primary p-2"
+                    aria-label="Default select example"
+                  >
+                    <option selected>محل برگزاری</option>
+                    <option value="1">رستوران</option>
+                    <option value="2">باغ</option>
+                    <option value="3">کاخ</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <select
+                    class="form-select border-primary p-2"
+                    aria-label="Default select example"
+                  >
+                    <option selected>نوع مراسم</option>
+                    <option value="1">همایش</option>
+                    <option value="2">مراسم پر جمعیت</option>
+                    <option value="3">مراسم کوچیک</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <select
+                    class="form-select border-primary p-2"
+                    aria-label="Default select example"
+                  >
+                    <option selected>تعداد مهمان</option>
+                    <option value="1">100-200</option>
+                    <option value="2">300-400</option>
+                    <option value="3">500-600</option>
+                    <option value="4">700-800</option>
+                    <option value="5">900-1000</option>
+                    <option value="6">1000+</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <select
+                    class="form-select border-primary p-2"
+                    aria-label="Default select example"
+                  >
+                    <option selected>نوع غذا</option>
+                    <option value="1">گیاهی</option>
+                    <option value="2">گوشتی</option>
+                  </select>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input
+                    type="mobile"
+                    class="form-control border-primary p-2"
+                    placeholder="شماره تلفن همراه"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input
+                    type="date"
+                    class="form-control border-primary p-2"
+                    placeholder="تاریخ مورد نظر"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input
+                    type="email"
+                    class="form-control border-primary p-2"
+                    placeholder="ایمیل خود را وارد کنید"
+                  />
+                </div>
+                <div class="col-12 text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-primary px-5 py-3 rounded-pill"
+                  >
+                    رزرو
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <img
+              src="img/background-site.jpg"
+              class="img-fluid h-100 w-100 rounded-end"
+              style="object-fit: cover; opacity: 0.7"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Book Us End -->
+
+    <!-- Footer Start -->
+     <div
+      class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp"
+      data-wow-delay="0.1s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-item">
+              <h1 class="text-primary">
+                <span class="text-dark">کترینگ </span>اتم
+              </h1>
+              <p class="lh-lg mb-4">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است
+              </p>
+              <div class="footer-icon d-flex">
+                <a
+                  class="btn btn-primary btn-sm-square ms-2 rounded-circle"
+                  href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  class="btn btn-primary btn-sm-square ms-2 rounded-circle"
+                  href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="btn btn-primary btn-sm-square ms-2 rounded-circle"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-item">
+              <h4 class="mb-4">امکانات ویژه</h4>
+              <div class="d-flex flex-column align-items-start">
+                <a class="text-body mb-3" href=""
+                  ><i class="fa fa-check text-primary ms-2"></i>منو اختصاصی</a
+                >
+                <a class="text-body mb-3" href=""
+                  ><i class="fa fa-check text-primary ms-2"></i>منو اختصاصی</a
+                >
+                <a class="text-body mb-3" href=""
+                  ><i class="fa fa-check text-primary ms-2"></i>منو اختصاصی</a
+                >
+                <a class="text-body mb-3" href=""
+                  ><i class="fa fa-check text-primary ms-2"></i>منو اختصاصی</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-item">
+              <h4 class="mb-4">ارتباط باما</h4>
+              <div class="d-flex flex-column align-items-start">
+                <p>
+                  <i class="fa fa-map-marker-alt text-primary ms-2"></i> خیابان
+                  فلان، کوچه فلان پلاک 10
+                </p>
+                <p>
+                  <i class="fa fa-phone-alt text-primary ms-2"></i> 09121234567
+                </p>
+                <p>
+                  <i class="fa fa-clock text-primary ms-2"></i> پاسخگویی 24
+                  ساعته
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-item">
+              <h4 class="mb-4">محبوب ترین</h4>
+              <div class="row g-2">
+                <div class="col-4">
+                  <img
+                    src="img/menu-01.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/menu-02.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/menu-03.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/menu-04.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/menu-05.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/menu-06.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+     <div class="container-fluid copyright bg-dark py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            این قالب توسط <span class="text-primary">محمد ابراهیمی </span> با ❤
+            توسعه داده شده است
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
